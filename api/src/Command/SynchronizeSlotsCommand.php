@@ -34,7 +34,9 @@ class SynchronizeSlotsCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         //happy path, error handling needs to be added
+        //good idea would be to implement way of synchronizing only specific doctor for ex: by external api id
         $this->doctorSlotSynchronizerService->synchronizeDoctors();
+
         return Command::SUCCESS;
     }
 }

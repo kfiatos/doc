@@ -88,6 +88,7 @@ class Slot
     public static function createFromApiResponseDto(DoctorSlotApiDataDto $dto): self
     {
         $slot = new self();
+        //there should not be possible that start is newer than end
         $slot->setStartTime(new \DateTime($dto->getStartTime()));
         $slot->setEndTime(new \DateTime($dto->getEndTime()));
 

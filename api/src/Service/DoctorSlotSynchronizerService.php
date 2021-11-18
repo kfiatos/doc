@@ -6,6 +6,7 @@ use App\Dto\DoctorApiDataDto;
 use App\Entity\Doctor;
 use App\Entity\Slot;
 use App\Service\Client\DoctorApiClientInterface;
+use App\Service\Sorter\SlotDurationDescendingSorter;
 use GuzzleHttp\Exception\RequestException;
 use Psr\Log\LoggerInterface;
 
